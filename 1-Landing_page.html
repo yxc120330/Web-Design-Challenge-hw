@@ -1,0 +1,83 @@
+<!--The project is to identify if there is correlations between Latitude and Max Temp/Humidity/Cloudiness/Wind Speed, with data collected from various cites/countries
+of different lat and lng over a period of time. -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latitude</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<div class="navbar">
+    <a class="title" href="1-Landing_page.html" style="font-size: xx-large; background-color: cadetblue; color:white">Latitude</a>
+    <div class="topnav-right">
+        <form class="navbar-form">
+            <div class="dropdown">
+                <button class="dropbtn" style="font-size: larger; ">Plots
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+
+<!--links to each visualizations pages-->
+                    <a href="Visualization_page_1_max_temp.html">Max Temperature</a>
+                    <a href="Visualization_page_2_humidity.html">Humidity</a>
+                    <a href="Visualization_page_3_cloudiness.html">Cloudiness</a>
+                    <a href="Visualization_page_4_wind_speed.html">Wind Speed</a>
+                </div>
+            </div>
+            <a href="comparison.html" style="font-size: larger;">Comparison</a>
+            <a href="data.html" style="font-size: larger;">Data</a>
+        </form>
+    </div>
+</div>
+
+<div class="grid-container">
+    <div class="left" style="background-color:white; padding: 20px" >
+        <h1 style="color: cadetblue">Summary: Latitude vs. X</h1>
+        <hr class="solid">
+        <img src="Resources/assets/images/Fig1.png" align="left" style="width:400px;height:400px;margin:10px">
+        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator.
+        To accomplish this analysis, we first pulled data from the OpenWeatherMap API
+        to assemble a dataset on over 500 cities.<br></p>
+        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included:
+            temperature, cloudiness, wind speed, and humidity. This side provides the source data and visualizations created as part of the
+            analysis, as well as explanations and descriptions of any trends and correlations witnessed.<br></p>
+    </div>
+    <div class="right" style="background-color:white; padding: 20px">
+        <h2 style="color: cadetblue">Visualizations</h2>
+        <hr class="solid">
+        <div class="vis-container">
+            <div class="vis-top-left">
+                <a href="Visualization_page_1_max_temp.html">
+                    <img src="Resources/assets/images/Fig1.png" align="center" style="max-width:100%;height:auto;margin:5px">
+                </a>
+            </div>
+            <div class="vis-top-right">
+                <a href="Visualization_page_2_humidity.html">
+                    <img src="Resources/assets/images/Fig2.png" align="center" style="max-width:100%;height:auto;margin:5px">
+                </a>
+            </div>
+            <div class="vis-bot-left">
+                <a href="Visualization_page_3_cloudiness.html">
+                    <img src="Resources/assets/images/Fig3.png" align="center" style="max-width:100%;height:auto;margin:5px">
+                </a>
+            </div>
+            <div class="vis-bot-right">
+                <a href="Visualization_page_4_wind_speed.html">
+                    <img src="Resources/assets/images/Fig4.png" align="center" style="max-width:100%;height:auto;margin:5px">
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
